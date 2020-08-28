@@ -180,6 +180,12 @@ main {
     display: none;
 }
 
+.ver-code-warn {
+    color: red;
+    line-height: 33px;
+    display: none;
+}
+
 
 /* 页脚 */
 
