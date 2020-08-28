@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+main {
+    width: 994px;
+    margin: 0 auto;
+    height: 88px;
+}
+
+.logo {
+    background: url(../img/sprite.png) no-repeat;
+    width: 190px;
+    height: 88px;
+    float: left;
+}
+
+.login-txt {
+    float: left;
+    color: #666666;
+    font-size: 18px;
+    line-height: 88px;
+    margin-left: 24px;
+}
+
+.tologin {
+    float: right;
+    font-size: 12px;
+    color: #333333;
+    margin-top: 66px;
+    text-decoration: none;
+}
+
+.tologin:hover {
+    color: #ff9900;
+}
+
+.content {
+    clear: both;
+    border: solid 1px #dddddd;
+    border-top: solid 3px #ff9900;
+    min-height: 200px;
+    background-color: #ffffff;
+}
+
+.login-message {
+    padding-top: 50px;
+}
+
+.login-message em {
+    color: #ff444f;
+    font-style: normal;
+}
+
+.reg_form {
+    width: 380px;
+    margin: 0 auto;
+    /* background-color: #cecece; */
+}
+
+.tit {
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.inputbox {
+    width: 380px;
+    height: 40px;
+    border: solid 1px #cccccc;
+    margin-bottom: 25px;
+    font-size: 12px;
+    position: relative;
+}
+
+.inputbox span {
+    line-height: 40px;
+    margin-left: 10px;
+}
+
+.inputbox input {
+    border: none;
+    outline: none;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    font-size: 12px;
+    left: 88px;
+}
+
+.inputbox ::-webkit-input-placeholder {
+    color: #cacaca;
+}
+
+.ver-code {
+    float: right;
+    width: 148px;
+    height: 40px;
+    border-left: solid 1px #cccccc;
+    line-height: 40px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.ver-code:hover {
+    color: #ff9900;
+    cursor: pointer;
+}
+
+.inputbox .sec {
+    width: 120px;
+}
+
+.inputbox:nth-child(3) {
+    margin-bottom: 35px;
+}
+
+.btn input {
+    width: 380px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #ff6600;
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.btn input:hover {
+    cursor: pointer;
+    background-color: #ff444f;
+}
+
+.company-res {
+    display: block;
+    font-size: 14px;
+    color: #ff6600;
+    text-decoration: none;
+    line-height: 32px;
+    margin-bottom: 28px;
+}
+
+.links a:hover {
+    color: #ff9900;
+}
+
+
+/* 页脚 */
+
+footer {
+    width: 994px;
+    margin: 16px auto 0;
+    min-height: 200px;
+    text-align: center;
+}
+
+footer .links {
+    color: #666666;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.links span,
+.copyright span {
+    padding: 0 8px;
+}
+
+.copyright,
+.copyright span,
+.copyright a {
+    color: #999999;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.copyright img {
+    display: inline;
+    vertical-align: middle;
+}
+
+.footerImg img {
+    display: inline-block;
+    height: 24px;
+    padding: 6px;
+}
+
+
+/* 协议 */
+
+.argument-wrap {
+    width: 610px;
+    height: 450px;
+    border: solid 5px #e6e6e6;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    margin: auto;
+    display: none;
+}
+
+.argument {
+    width: 553px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.argument .header {
+    font-size: 12px;
+    font-weight: bolder;
+    line-height: 40px;
+    border-bottom: solid 1px #dddddd;
+}
+
+.close-btn {
+    float: right;
+    font-size: 24px;
+    line-height: 40px;
+    color: #979797;
+}
+
+.close-btn:hover {
+    cursor: pointer;
+}
+
+.read {
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 12px;
+    color: #333333;
+    line-height: 20px;
+}
+
+.read span {
+    font-weight: normal;
+}
+
+.argument p span {
+    font-weight: 600;
+}
+
+.argument p {
+    line-height: 20px;
+}
+
+.argument a {
+    display: block;
+    color: #ff6600;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+#agree-btn {
+    display: block;
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    margin: 3px auto;
+    background-color: #ff6600;
+    color: #ffffff;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+#agree-btn:hover {
+    cursor: pointer;
+    background-color: #ff444f;
+}
+
+.setpsd-sug {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    position: absolute;
+    /* display: none; */
+    margin-top: -88px;
+}
+
+.setpsd-sug .setpsd-sug-box {
+    width: 450px;
+    height: 330px;
+    background-color: #ffffff;
+    border: solid 5px #dcdcdc;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}

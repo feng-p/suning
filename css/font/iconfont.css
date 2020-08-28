@@ -1,0 +1,25 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1598542621721'); /* IE9 */
+  src: url('iconfont.eot?t=1598542621721#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAO8AAsAAAAAB+QAAANuAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqDTIMdATYCJAMMCwgABCAFhG0HOBvlBlGUDUqc7IckSYnKNiEEQBXQgKN3AAA4AIgUaACIh//WfvfNzO7/Dt4giTaIoqeTRCOJTIZIgkwqRFKge4W896395jt4qPP6efwJs6T1dHbPV9HkLZMojR8ihEaicmSXu9mPZiK7hFzT7Mjy0Qb9tdH/XI5vRQnMD5Tj2tOPegcYBxTY2MOyQAskQW8Yu6AlribQNcsxODw4u4QlhdkpELcVT2Epo1MaikNbqCtGFvGs0k6P6Qt4Cr4fv6JYIqkyc62jm/0Ctj7WP3byfdPgMj+4n84CNo6MNaAQ15W2U6Motmakq8rGzdm1IqSpgk1DwNMktfWHRxJEzSzsgyUkTRfFd3iJfAcKrnqlDGoM8YJXJn1S00pnsRWiDGhLAg+8vprSqS2AS+NlYfAa8PkOcCSM7zJ54hsu+sLKGSFP56aK65fatDG+W3V0U2OCH3ssyhzHU4GjUKg1tZ3Y+AaIBCllSMSQYvelNqsENnVhBmzuwk3m5EyHB10jDaOo2D3eOJbcPUrEgOU3bqNs9ybhyWQggQRMFRvs4B+USsi/iZi3LM8rqsFVNVOyaDfcPKJwi95W1bXRMyouczvr6kpnUDfuSh/EyQwqfC8kMr+MinW0Z5xEqX/05yBKUtE/pjU1c4yXNcvtvZvjdON0z2hBIOspnXMqoGd8P5ke4nmlqTIu1/G+pk3fFBoV3ui/LnKqHAaC1yd/F95g/HyPC5Ulso1O+P+8mfQxtc3eriogonnUJ5l+ADQN+T83BomT/Jmj//gb43deH29u/i9hAe/dny70Ng0FuudpSzD+X+N3LCua0NTnovAcnpHMji2/k3xdXfyrUhj3M9wxBRJLaHM+hKRlBrK2OaQQa1Dp2YBa2w50rToc3zNBG4nSwYp3AGHUByRDb5CNWiCF+IbKtF+ojcYIuo5jYsaehahWDjSllgrMHrDKRc9so10Ji8+J37SpTgsDxjVpUwUx9IJ88pB60lP0Mbc8spYh06LDA7Aeta1AqUVNufVKa+Xc91nVk7xcdLDigEZSFimgzANUyQk95lW2VgqfP0e4G62UbiBVua8RzahqRyFP0AE5lPWdSLdyjnGLi1gWgxhN6KADYCGtFROQrG5WIznLUw6ISHM+omJdZd7yiu79VkGXuWiOFDmK6rbKUjG9SXv+WAEAAAA=') format('woff2'),
+  url('iconfont.woff?t=1598542621721') format('woff'),
+  url('iconfont.ttf?t=1598542621721') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1598542621721#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-libao:before {
+  content: "\e642";
+}
+
+.icon-fangzi:before {
+  content: "\e633";
+}
+
