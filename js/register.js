@@ -1,8 +1,8 @@
 $(function() {
     //页面加载时协议显示
-    /*  $(".argument-wrap").css({
-         "display": "block"
-     }); */
+    $(".argument-wrap").css({
+        "display": "block"
+    });
     //点击同意按钮时隐藏
     $("#agree-btn").click(function() {
         $(".argument-wrap").css({
@@ -93,25 +93,65 @@ $(function() {
 
 
 
+
+
+    $(".psd").bind('input propertychange', function() {
+        var str = $(".psd").val();
+        console.log(str.length, str);
+        if (str.length >= 6) {
+            $(".psd-length").css({
+                "display": "block"
+            });
+            psdstrength(str);
+
+        } else {
+            $(".psd-length").css({
+                "display": "none"
+            });
+        }
+    });
+
+
     //密码框获取焦点时显示提示，失去焦点时隐藏提示
     $(".psd").focus(function() {
+        var str = $(".psd").val();
+        if (str.length >= 6) {
+            $(".psd-length").css({
+                "display": "block"
+            });
+            psdstrength(str);
+        }
         $(".posi-warn").css({
-            "display": "block"
-        })
-    });
-    $(".psd").change(function() {
-        $(".posi-warn").css({
-            "display": "block"
-        })
-
-    });
-
+            "display": "block",
+            "color": "#999999"
+        }).html("6-20个字符，由字母、数字和符号的两种以上组合。")
+    })
 
 
     $(".psd").blur(function() {
+        var str = $(".psd").val();
+        console.log(str.length)
         $(".posi-warn").css({
             "display": "none"
-        })
+        });
+        if (str.length == 0) {
+            $(".psd-length").css({
+                "display": "none"
+            })
+            $(".psd-length>p").css({
+                "background": "#cacaca"
+            });
+        } else if (str.length > 0 && str.length < 6) {
+            $(".psd-length").css({
+                "display": "none"
+            });
+            $(".posi-warn").css({
+                "display": "block",
+                "color": "red"
+            }).html("请输入6-20位密码！");
+
+        }
+
     });
 
 
@@ -130,9 +170,46 @@ $(function() {
     });
 
 
-
-
     //密码强度判断
+    function psdstrength(val) {
+        var flag1 = false,
+            flag2 = false,
+            flag3 = false;
 
+        for (let i = 0; i < val.length; i++) {
+
+            if (/\d/.test(val[i]) && flag1 == false) { //数字
+                flag1 = true;
+            }
+            if (/[a-zA-Z]/.test(val[i]) && flag2 == false) {
+                flag2 = true;
+            }
+            if (/(?=[\x21-\x7e]+)[^A-Za-z0-9]/.test(val[i]) && flag3 == false) {
+                flag3 = true;
+            }
+        }
+        if (flag1 && flag2 && flag3) {
+            $(".psd-length>p").eq(0).css({
+                "background": "#ffaa00"
+            });
+            $(".psd-length>p").eq(1).css({
+                "background": "#ffaa00"
+            });
+            $(".psd-length>p").eq(2).css({
+                "background": "#ffaa00"
+            })
+        } else if (flag1 && flag2 || flag1 && flag3 || flag2 && flag3) {
+            $(".psd-length>p").eq(0).css({
+                "background": "#ffaa00"
+            });
+            $(".psd-length>p").eq(1).css({
+                "background": "#ffaa00"
+            });
+        } else {
+            $(".psd-length>p").eq(0).css({
+                "background": "#ffaa00"
+            });
+        }
+    }
 
 })

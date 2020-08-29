@@ -1,0 +1,364 @@
+/* 头部 */
+
+header {
+    width: 994px;
+    margin: 0 auto;
+    min-height: 100px;
+    position: relative;
+}
+
+header .logo {
+    width: 189px;
+    height: 100px;
+    background: url(../img/logo.png)no-repeat center;
+    float: left;
+}
+
+header>span {
+    float: left;
+    color: #333333;
+    line-height: 1;
+    padding: 6px;
+    border: #fecd66 1px solid;
+    margin-left: 16px;
+    background-color: #fefff1;
+    margin-top: 37px;
+}
+
+header span a {
+    font-style: normal;
+    color: #ff6600;
+}
+
+header .suggest {
+    margin: 10px 10px 0 0;
+    height: 18px;
+    float: right;
+    position: relative;
+}
+
+header .suggest i {
+    width: 18px;
+    height: 18px;
+    background: url(../img/sprite1.png)-67px -27px no-repeat;
+    position: absolute;
+    top: -1px;
+    left: -28px;
+}
+
+header .suggest:hover>span {
+    color: #ff6600;
+}
+
+
+/* 中间 */
+
+main {
+    width: 100%;
+    background: url(../img/login-banner.jpg)no-repeat center;
+    min-height: 570px;
+}
+
+.middle {
+    width: 994px;
+    height: 570px;
+    margin: 0 auto;
+}
+
+.middle>a {
+    float: left;
+    width: 570px;
+    height: 570px;
+}
+
+.login-box {
+    width: 360px;
+    height: 435px;
+    background-color: #ffffff;
+    float: right;
+    margin: 50px 20px 0 0;
+}
+
+.login-box-head {
+    border-bottom: solid 1px #eeeeee;
+}
+
+.login-box-head a {
+    float: left;
+    font-size: 16px;
+    border-right: solid 1px #eeeeee;
+    width: 179px;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 16px;
+    position: relative;
+    margin-bottom: 17px;
+}
+
+.login-box-head a:hover {
+    color: #ff6600;
+}
+
+.outline {
+    color: #ff6600;
+}
+
+.outline i {
+    position: absolute;
+    bottom: -17px;
+    left: 55px;
+    width: 70px;
+    height: 3px;
+    background-color: #ff6600;
+}
+
+.login-box-left {
+    height: 240px;
+    width: 100%;
+    position: relative;
+}
+
+.img-box {
+    width: 290px;
+    height: 200px;
+    margin: 10px auto 0;
+    position: relative;
+}
+
+.login-box-left .code {
+    position: absolute;
+    top: 44px;
+    left: 75px;
+    width: 140px;
+}
+
+.login-box-left .phone {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 200px;
+}
+
+.hint {
+    width: 170px;
+    height: 16px;
+    position: absolute;
+    bottom: 5px;
+    left: 95px;
+    line-height: 16px;
+}
+
+.hint i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../img/sprite1.png)-164px -67px no-repeat;
+    position: absolute;
+}
+
+.hint>span {
+    margin-left: 26px;
+    color: #2F2F2F;
+    line-height: 16px;
+}
+
+.hint>span>a {
+    color: #ff6600;
+}
+
+.login-box-bottom {
+    text-align: center;
+    width: 310px;
+    margin: 0 auto;
+}
+
+.register {
+    color: #ff6600;
+    line-height: 50px;
+}
+
+.caption {
+    width: 310px;
+    color: #999999;
+    line-height: 36px;
+}
+
+.caption>span {
+    margin: 0 15px;
+}
+
+.container {
+    width: 310px;
+    text-align: left;
+}
+
+.container a {
+    border-right: solid 1px #dedcd5;
+    color: #333333;
+    line-height: 16px;
+}
+
+.container a span {
+    display: inline-block;
+    padding: 0 8px 0 5px;
+    vertical-align: middle;
+}
+
+.container a i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-left: 7px;
+}
+
+.qq {
+    background: url(../img/sprite1.png)-140px -108px no-repeat;
+}
+
+.wx {
+    background: url(../img/sprite1.png)-90px -27px no-repeat;
+}
+
+.yfb {
+    background: url(../img/sprite1.png)-119px -108px no-repeat;
+}
+
+.wb {
+    background: url(../img/sprite1.png)0 -149px no-repeat;
+}
+
+.login-wran {
+    width: 310px;
+    height: 22px;
+    border: solid 1px #ff3c3c;
+    background-color: #fff0f0;
+    position: absolute;
+    top: -32px;
+    left: 0;
+    display: none;
+}
+
+.login-wran>span {
+    display: inline-block;
+    line-height: 22px;
+    color: #323232;
+    vertical-align: middle;
+}
+
+.login-wran i {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background: url(../img/sprite1.png)-161px -108px no-repeat;
+    margin: 0 8px 0 10px;
+    vertical-align: middle;
+}
+
+.username-login {
+    width: 312px;
+    height: 210px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.username,
+.password {
+    width: 310px;
+    height: 35px;
+    border: solid 1px #dddddd;
+    position: relative;
+}
+
+.username {
+    margin: 40px 0 20px 0;
+}
+
+.password {
+    margin-bottom: 30px;
+}
+
+.userimg,
+.psdimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+}
+
+.userimg {
+    background: url(../img/sprite1.png)-123px -67px no-repeat;
+}
+
+.psdimg {
+    background: url(../img/sprite1.png)0 -108px no-repeat;
+}
+
+#username,
+#password {
+    line-height: 36px;
+    margin-left: 36px;
+    width: 274px;
+}
+
+.message {
+    height: 36px;
+}
+
+.message-login {
+    float: left;
+    line-height: 36px;
+    color: #333333;
+}
+
+.message-login i {
+    display: inline-block;
+    height: 16px;
+    width: 13px;
+    vertical-align: middle;
+    background: url(../img/sprite1.png)-21px -149px no-repeat;
+    margin-right: 6px;
+}
+
+.message-login span {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.forget-psd {
+    float: right;
+    line-height: 36px;
+    color: #333333;
+}
+
+#login-btn {
+    width: 310px;
+    height: 40px;
+    background-color: #ff6600;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#login-btn:hover {
+    cursor: pointer;
+    background-color: #FF5500;
+}
+
+
+/* 页脚 */
+
+.u:hover:hover {
+    text-decoration: underline;
+}
+
+.c:hover {
+    color: #ff6600;
+}
+
+.p {
+    cursor: pointer;
+}

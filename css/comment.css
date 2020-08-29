@@ -1,0 +1,38 @@
+/* 页脚 */
+
+footer {
+    width: 994px;
+    margin: 16px auto 0;
+    min-height: 200px;
+    text-align: center;
+}
+
+footer .links {
+    color: #666666;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.links span,
+.copyright span {
+    padding: 0 8px;
+}
+
+.copyright,
+.copyright span,
+.copyright a {
+    color: #999999;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.copyright img {
+    display: inline;
+    vertical-align: middle;
+}
+
+.footerImg img {
+    display: inline-block;
+    height: 24px;
+    padding: 6px;
+}

@@ -133,7 +133,7 @@ main {
 
 .btn input:hover {
     cursor: pointer;
-    background-color: #ff444f;
+    background-color: #FF5500;
 }
 
 .tel-warn {
@@ -186,44 +186,25 @@ main {
     display: none;
 }
 
-
-/* 页脚 */
-
-footer {
-    width: 994px;
-    margin: 16px auto 0;
-    min-height: 200px;
-    text-align: center;
+.psd-length {
+    height: 16px;
+    display: none;
+    margin-top: 4px;
 }
 
-footer .links {
-    color: #666666;
-    font-size: 12px;
-    line-height: 24px;
-}
-
-.links span,
-.copyright span {
-    padding: 0 8px;
-}
-
-.copyright,
-.copyright span,
-.copyright a {
-    color: #999999;
-    font-size: 12px;
-    line-height: 24px;
-}
-
-.copyright img {
-    display: inline;
-    vertical-align: middle;
-}
-
-.footerImg img {
+.psd-length p {
     display: inline-block;
-    height: 24px;
-    padding: 6px;
+    width: 50px;
+    height: 16px;
+    line-height: 16px;
+    color: #ffffff;
+    background-color: #cacaca;
+    text-align: center;
+    margin-left: 2px;
+}
+
+.psd-length p:nth-child(1) {
+    background-color: #ffaa00;
 }
 
 
@@ -308,7 +289,7 @@ footer .links {
 
 #agree-btn:hover {
     cursor: pointer;
-    background-color: #ff444f;
+    background-color: #FF5500;
 }
 
 
