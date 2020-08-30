@@ -348,6 +348,18 @@ main {
     background-color: #FF5500;
 }
 
+.clear {
+    display: inline-block;
+    height: 36px;
+    width: 32px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../img/sprite1.png)-82px -108px no-repeat;
+    display: none;
+    cursor: pointer;
+}
+
 
 /* 页脚 */
 

@@ -60,8 +60,18 @@ $(function() {
     })
     $("#username").blur(function() {
         $(".userimg").css({
-            "background": "url(../img/sprite1.png)-123px -67px no-repeat"
-        })
+                "background": "url(../img/sprite1.png)-123px -67px no-repeat"
+            })
+            //判断用户名框是否为空，如果不为空出现×号
+        if ($(this).val() != "") {
+            $(this).next().next().css({
+                "display": "block"
+            });
+        } else {
+            $(this).next().next().css({
+                "display": "none"
+            });
+        }
     })
     $("#password").focus(function() { //密码框
         $(".psdimg").css({
@@ -71,7 +81,40 @@ $(function() {
     $("#password").blur(function() {
         $(".psdimg").css({
             "background": "url(../img/sprite1.png)0 -108px no-repeat"
-        })
+        });
+        if ($(this).val() != "") {
+            $(this).next().next().css({
+                "display": "block"
+            });
+        } else {
+            $(this).next().next().css({
+                "display": "none"
+            });
+        }
+    })
+
+    //点击×时，清空对应输入框的值
+
+    $(".clear").click(function() {
+        $(this).prev().prev().val("").focus();
+    })
+
+    //点击登录时判断输入框的值，如果为空出现提示
+    $("#login-btn").click(function() {
+        var str = $("#password").val();
+        if ($("#username").val() == "") {
+            $(".login-wran").css({
+                "display": "block"
+            }).children("span").html("请输入用户名/邮箱/手机号！");
+        } else if (str.length < 6) {
+            $(".login-wran").css({
+                "display": "block"
+            }).children("span").html("请输入6-20位密码！");
+        } else {
+            $(".login-wran").css({
+                "display": "none"
+            });
+        }
     })
 
 

@@ -1,0 +1,311 @@
+/* 头部 */
+
+header {
+    min-height: 100px;
+    width: 100%;
+}
+
+.header-box-wrap {
+    background-color: #f5f5f5;
+    border-bottom: solid 1px #eeeeee;
+}
+
+.header-box {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.header-left {
+    float: left;
+}
+
+.header-left li {
+    float: left;
+    line-height: 35px;
+    color: #666666;
+}
+
+.header-right {
+    float: right;
+}
+
+.header-right li {
+    float: left;
+    line-height: 35px;
+    color: #666666;
+}
+
+.header-left .return-index a .icon-fangzi {
+    font-size: 16px;
+    color: #666666;
+    line-height: 35px;
+    margin-right: 3px;
+}
+
+.return-index span {
+    color: #666666;
+}
+
+.header-left .return-index {
+    padding-left: 0;
+}
+
+.header-box li {
+    padding: 0 10px;
+}
+
+.header-box li .iconfont {
+    font-size: 12px;
+    line-height: 35px;
+    margin-left: 3px;
+}
+
+.header-right li {
+    padding: 0 10px;
+}
+
+#cartimg {
+    margin-right: 7px;
+}
+
+#cartLi {
+    padding: 0 5px;
+}
+
+
+/* 搜索框 */
+
+.search-box {
+    width: 1190px;
+    height: 110px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 400px;
+    float: left;
+}
+
+.logo img {
+    display: inline-block;
+    width: 190px;
+    height: 100px;
+}
+
+.logo div {
+    width: 66px;
+    height: 24px;
+    margin: 48px 107px 0 0;
+    float: right;
+    background-color: #FFAA00;
+    border-radius: 12px;
+}
+
+.logo .focus-f {
+    color: #ffffff;
+    line-height: 24px;
+    float: right;
+    margin-right: 8px;
+}
+
+.focus {
+    display: inline-block;
+    width: 20px;
+    height: 17px;
+    background: url(../img/focus.png);
+    margin: 4px 4px 3px 10px;
+}
+
+.seek-box {
+    float: left;
+}
+
+.seek {
+    width: 550px;
+    height: 36px;
+    margin-top: 30px;
+    border: solid 2px #E42E3C;
+    position: relative;
+}
+
+.seek-img {
+    display: inline-block;
+    width: 28px;
+    height: 36px;
+    line-height: 36px;
+    /* font-size: 28px; */
+}
+
+.seek-input {
+    display: inline-block;
+    width: 420px;
+    height: 36px;
+}
+
+.seek-word {
+    display: inline-block;
+    width: 98px;
+    height: 36px;
+    background-color: #E42E3C;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.seek-under {
+    margin-top: 10px;
+}
+
+.seek-under li {
+    float: left;
+    margin: 0 4px;
+    color: #999999;
+}
+
+.seek-under li a {
+    color: #999999;
+}
+
+.seek-under li:nth-child(1) {
+    margin-left: 0;
+}
+
+.erweima {
+    width: 236px;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+
+.erweima img {
+    position: absolute;
+    top: 22px;
+    left: 80px;
+}
+
+
+/* 导航 */
+
+.nav-box {
+    width: 1190px;
+    height: 38px;
+    margin: 0 auto;
+}
+
+.classify {
+    width: 240px;
+    color: #ffffff;
+    line-height: 38px;
+    background-color: #e42e3c;
+    font-weight: bold;
+    float: left;
+    cursor: pointer;
+    border-radius: 10px 10px 0 0;
+}
+
+.classify span {
+    line-height: 38px;
+    line-height: 1;
+    padding: 0 5px;
+}
+
+.classify-list {
+    margin-left: 12px;
+    float: left;
+}
+
+.classify-list a {
+    font-size: 14px;
+    color: #333333;
+    line-height: 38px;
+    padding: 0 20px;
+}
+
+.classify-list a:hover {
+    color: #E42E3C;
+}
+
+.classify-list span {
+    color: #cccccc;
+}
+
+
+/* 广告轮播图区域 */
+
+.banner-slider {
+    width: 1190px;
+    height: 438px;
+    background-color: #FFAA00;
+    margin: 0 auto;
+}
+
+.banner-img-box {
+    position: relative;
+    height: 438px;
+}
+
+.banner-img-box img {
+    position: absolute;
+    top: 0;
+    left: -375px;
+    z-index: -10;
+}
+
+.toggle-btn-l {
+    display: inline-block;
+    width: 30px;
+    height: 60px;
+    background-color: #000000;
+    opacity: .2;
+    background: url(../img/sptt.png)-184px -62px no-repeat;
+    position: absolute;
+    top: 190px;
+    left: 0;
+    cursor: pointer;
+}
+
+.toggle-btn-r {
+    display: inline-block;
+    width: 30px;
+    height: 60px;
+    background-color: #000000;
+    opacity: .2;
+    background: url(../img/sptt.png)-184px 0 no-repeat;
+    position: absolute;
+    right: 0;
+    top: 190px;
+    cursor: pointer;
+}
+
+.toggle-btn span {
+    display: none;
+}
+
+.toggle-btn span:hover {
+    opacity: .5;
+}
+
+.slider-num {
+    width: 120px;
+    height: 12px;
+    position: absolute;
+    bottom: 15px;
+    left: 535px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.slider-num span {
+    width: 22px;
+    height: 4px;
+    background-color: #b64a39;
+    cursor: pointer;
+    opacity: .7;
+}
+
+.slider-num .num-white {
+    background-color: #ffffff;
+}

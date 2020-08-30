@@ -36,3 +36,15 @@ footer .links {
     height: 24px;
     padding: 6px;
 }
+
+.u:hover {
+    text-decoration: underline !important;
+}
+
+.c:hover {
+    color: #ff6600 !important;
+}
+
+.p:hover {
+    cursor: pointer !important;
+}

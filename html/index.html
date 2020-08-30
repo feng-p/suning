@@ -5,10 +5,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>首页</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/comment.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/font/iconfont.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/index.js"></script>
 </head>
 
 <body>
+    <header>
+        <div class="header-box-wrap">
+            <div class="header-box clean">
+                <ul class="header-left">
+                    <li class="return-index p">
+                        <a href="https://www.suning.com/"><span
+                                class="iconfont icon-fangzi"></span><span>返回首页</span></a>
+                    </li>
+                    <li class="p"><span>网站导航</span><span class="iconfont icon-fangzi"></span></li>
+                    <li class="p"><span>商家入驻</span><span class="iconfont icon-fangzi"></span></li>
+                    <li class="p"><span>客户服务</span><span class="iconfont icon-fangzi"></span></li>
+                </ul>
+                <ul class="header-right">
+                    <li class="p"><a href="login.html">请登录</a></li>
+                    <li class="p"><a href="register.html">注册有礼</a></li>
+                    <li class="p"><span>我的订单</span><span class="iconfont icon-fangzi"></span></li>
+                    <li class="p"><span>我的易购</span><span class="iconfont icon-fangzi"></span></li>
+                    <li class="p"> <a href="https://vip.suning.com/" target="_blank">苏宁会员</a> </li>
+                    <li id="cartLi" class="p"><span class="iconfont icon-fangzi" id="cartimg"></span><span>购物车
+                            0</span><span class="iconfont icon-fangzi"></span></li>
+                    <li class="p"> <a href="https://pay.suning.com/" target="_blank">易付宝</a> </li>
+                    <li class="p"> <a href="https://b.suning.com/" target="_blank">企业采购</a></li>
+                    <li class="p"> <span>手机苏宁</span><span class="iconfont icon-fangzi"></span></li>
+                </ul>
+            </div>
+        </div>
 
+        <div class="search-box">
+            <div class="logo">
+                <a href="https://chaoshi.suning.com/" target="_blank"><img src="../img/159600587729191161.png" alt=""></a>
+                <div><span class="focus"></span> <span class="focus-f">关注</span>
+                </div>
+            </div>
+            <div class="seek-box">
+                <form action="">
+                    <div class="seek">
+                        <span class="seek-img">图标</span>
+                        <input type="text" class="seek-input" placeholder="请输入你想搜索的商品名称~">
+                        <input type="submit" class="seek-word" value="搜索">
+                    </div>
+                </form>
+                <ul class="seek-under">
+                    <li><a href="#">洗衣液</a></li>
+                    <li>|</li>
+                    <li><a href="#">白酒</a></li>
+                    <li>|</li>
+                    <li><a href="#">牛奶</a></li>
+                    <li>|</li>
+                    <li><a href="#">大米</a></li>
+                    <li>|</li>
+                    <li><a href="#">零食</a></li>
+                    <li>|</li>
+                    <li><a href="#">茅台</a></li>
+                    <li>|</li>
+                    <li><a href="#">牛肉</a></li>
+                    <li>|</li>
+                    <li><a href="#">抽纸</a></li>
+                </ul>
+            </div>
+            <div class="erweima">
+                <img src="../img/erweima.jpg" alt="">
+            </div>
+        </div>
+        <div class="nav-box">
+            <div class="classify">
+                <span class="iconfont icon-fangzi"></span> 苏宁超市频道分类
+            </div>
+            <div class="classify-list">
+                <a href="#">超市首页</a><span>|</span>
+                <a href="#">苏宁健康</a><span>|</span>
+                <a href="#">特色馆</a><span>|</span>
+                <a href="#">自有好物</a>
+            </div>
+        </div>
+    </header>
+    <main style="min-height: 2000px;">
+        <div class="banner-slider">
+            <div class="banner-img-box">
+                <img src="" alt="">
+                <div class="toggle-btn">
+                    <span class="toggle-btn-l"></span>
+                    <span class="toggle-btn-r"></span>
+                </div>
+                <div class="slider-num">
+                    <span class="num-white"></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="links">
+            <a class="c u" href="https://10035.suning.com/" target="_blank">苏宁互联</a><span>|</span>
+            <a class="c u" href="https://jinrong.suning.com/?safp=d488778a.uzD.ViRgl.2&safpn=10009" target="_blank">苏宁金融</a><span>|</span>
+            <a class="c u" href="https://pay.suning.com/epp-epw/login/login.action?idsTrustFrom=suning" target="_blank">苏宁支付</a><span>|</span>
+            <a class="c u" href="https://www.pptv.com/?rcc_id=snyg" target="_blank">PP视频</a><span>|</span>
+            <a class="c u" href="https://redbaby.suning.com/?safp=d488778a.uzD.ViRgl.5&safpn=10009" target="_blank">红孩子</a><span>|</span>
+            <a class="c u" href="https://wuliu.suning.com/home/home.htm#1" target="_blank">苏宁物流</a><span>|</span>
+            <a class="c u" href="https://cuxiao.suning.com/newUser.html?safp=d488778a.uzD.ViRgl.7&safpn=10009" target="_blank">手机苏宁</a><span>|</span>
+            <a class="c u" href="https://lsy.suning.com/" target="_blank">零售云</a><span>|</span>
+            <a class="c u" href="http://www.suningcloud.com/cms/index.htm" target="_blank">苏宁云</a><span>|</span>
+            <a class="c u" href="login.html" target="_blank">知识产权举报</a><span>|</span>
+            <a class="c u" href="https://www.suning.cn/cms/enterpriseManagementIntro/index.htm" target="_blank">投资者关系</a><span>|</span>
+            <a class="c u" href="https://smarthome.suning.com/?safp=d488778a.uzD.ViRgl.12&safpn=10009" target="_blank">苏宁智能</a>
+        </p>
+        <p class="links">
+            <a class="c u" href="https://hc.suning.com/help/channel-153317970815764428.htm" target="_blank">联系我们</a><span>|</span>
+            <a class="c u" href="http://careers.suning.cn/rps-web/" target="_blank">诚聘英才</a><span>|</span>
+            <a class="c u" href="https://cc.suning.com/" target="_blank">合作招商</a><span>|</span>
+            <a class="c u" href="https://ap.suning.com/aps-sale-web/?safp=d488778a.uzD.ViRgl.16&safpn=10009" target="_blank">广告平台</a><span>|</span>
+            <a class="c u" href="https://sums.suning.com/" target="_blank">苏宁联盟</a><span>|</span>
+            <a class="c u" href="https://zb.suning.com/bid-web/main.htm?safp=d488778a.uzD.ViRgl.18&safpn=10009" target="_blank">苏宁招标</a><span>|</span>
+            <a class="c u" href="https://hc.suning.com/privacy/index.htm" target="_blank">隐私政策</a><span>|</span>
+            <a class="c u" href="login.html" target="_blank">用户体验提升计划</a><span>|</span>
+            <a class="c u" href="login.html" target="_blank">股东会原认证</a>
+        </p>
+        <p class="copyright">
+            Copyright© 2002-2020，苏宁易购集团股份有限公司版权所有
+            <span>|</span>
+            <a class="u" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32010202010078" target="_blank">
+                <img src="../img/public security.png" alt=""> 苏公网安备 32010202010078号</a>
+            <span>|</span>
+            <a class="u" href="http://www.beian.miit.gov.cn/" target="_blank">苏ICP备10207551号-4</a>
+        </p>
+        <p class="copyright">
+            <a class="u" href="https://res.suning.cn/public/v3/images/dx5006.png" target="_blank">合字B2-20180025</a><span>|</span>
+            <a class="u" href="https://res.suning.cn/public/v3/images/dx1001.png" target="_blank">合字A1.B1.B2-20180017</a><span>|</span>
+            <a class="u" href="https://res.suning.cn/public/v3/images/cbw-20200402.jpg" target="_blank">出版物经营许可证新出发苏批字第A-243号</a><span>|</span> 互联网药品信息服务资格证书
+            <a class="u" href="https://res.suning.cn/public/v3/images/yaopin_new.png" target="_blank">（苏）-非经营性-2016-0005</a>
+        </p>
+        <p class="copyright">
+            <a class="u" href="https://cuxiao.suning.com/jyzz2.html?safp=d488778a.uzD.ViRgl.28&safpn=10009" target="_blank">经营执照</a><span>|</span>
+            <a class="u" href="http://sq.ccm.gov.cn/ccnt/sczr/service/business/emark/toDetail/ccaf7746824a4f91af567c29abc4b6aa" target="_blank">网络文化经营许可证：苏网文〔2018〕10580-203号</a><span>|</span>
+            <a href="javascript:;">互联网违法和不良信息举报邮箱：kfpt-yy@cnsuning.com</a><span>|</span>
+            <a href="javascript:;">举报电话：02566996699-865948</a>
+        </p>
+        <p class="copyright">
+            <a class="u" href="https://res.suning.cn/public/v3/images/ylqx-20190103.jpg" target="_blank">医疗器械网络交易服务第三方平台备案凭证-（苏）网械平台备字（2018）第00052号</a>
+        </p>
+        <p class="copyright">本网站直接或间接向消费者推销商品或者服务的商业宣传均属于“广告”（包装及参数、售后保障等商品信息除外）</p>
+        <div class="footerImg">
+            <a href="http://www.itrust.org.cn/Home/Index/itrust_certifi/wm/1566884810.html" target="_blank"><img src="../img/wxrz.png" alt=""></a>
+            <a href="https://credit.cecdc.com/CX20111018000608000610.html" target="_blank"><img src="../img/chengxin.png" alt=""></a>
+            <a href="http://image.suning.cn/uimg/snnet/snnetImg/142891196680527240.jpg" target="_blank"><img src="../img/unicom.png" alt=""></a>
+            <a href="https://res.suning.cn/public/v3/images/dianxin_content.jpg" target="_blank"><img src="../img/dianxin.jpg" alt=""></a>
+            <a href="https://zzlz.gsxt.gov.cn/businessCheck/verifKey.do?showType=p&serial=913200005668848108-SAIC_SHOW_1000009132000056688481081572311357911&signData=MEQCII+7OGallh6hxToamA3VfhexsTQw4fBcArcI7NexQaS0AiA8CqvkBVtdxtB/yiHMrNo9FWipRU161IH5hhB5BlBi2g=="
+                target="_blank"><img src="../img/dianzizhizhao.png" alt=""></a>
+        </div>
+    </footer>
 </body>
 
 </html>
