@@ -6,11 +6,46 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "3544821",
+      "name": "下箭头",
+      "font_class": "arrow",
+      "unicode": "e73a",
+      "unicode_decimal": 59194
+    },
+    {
       "icon_id": "6016034",
       "name": "礼包",
       "font_class": "libao",
       "unicode": "e642",
       "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "6488794",
+      "name": "搜索",
+      "font_class": "search",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "8435067",
+      "name": "下箭头",
+      "font_class": "arrow-top",
+      "unicode": "e502",
+      "unicode_decimal": 58626
+    },
+    {
+      "icon_id": "8504870",
+      "name": "首页-选中",
+      "font_class": "yemian-copy-copy-copy",
+      "unicode": "e501",
+      "unicode_decimal": 58625
+    },
+    {
+      "icon_id": "11323623",
+      "name": "实物-购物车",
+      "font_class": "gouwuche",
+      "unicode": "e504",
+      "unicode_decimal": 58628
     },
     {
       "icon_id": "11770957",

@@ -1,5 +1,9 @@
 /* 头部 */
 
+body {
+    position: relative;
+}
+
 header {
     min-height: 100px;
     width: 100%;
@@ -7,7 +11,6 @@ header {
 
 .header-box-wrap {
     background-color: #f5f5f5;
-    border-bottom: solid 1px #eeeeee;
 }
 
 .header-box {
@@ -237,7 +240,7 @@ header {
 .banner-slider {
     width: 1190px;
     height: 438px;
-    background-color: #FFAA00;
+    /* background-color: #FFAA00; */
     margin: 0 auto;
 }
 
@@ -250,7 +253,6 @@ header {
     position: absolute;
     top: 0;
     left: -375px;
-    z-index: -10;
 }
 
 .toggle-btn-l {
@@ -262,8 +264,9 @@ header {
     background: url(../img/sptt.png)-184px -62px no-repeat;
     position: absolute;
     top: 190px;
-    left: 0;
+    left: 250px;
     cursor: pointer;
+    z-index: 10;
 }
 
 .toggle-btn-r {
@@ -274,13 +277,10 @@ header {
     opacity: .2;
     background: url(../img/sptt.png)-184px 0 no-repeat;
     position: absolute;
-    right: 0;
+    right: 195px;
     top: 190px;
     cursor: pointer;
-}
-
-.toggle-btn span {
-    display: none;
+    z-index: 10;
 }
 
 .toggle-btn span:hover {
@@ -309,3 +309,382 @@ header {
 .slider-num .num-white {
     background-color: #ffffff;
 }
+
+#slider {
+    height: 100%;
+}
+
+#slider img {
+    cursor: pointer;
+}
+
+.shopping-classify {
+    width: 240px;
+    height: 438px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.shopping-classify .classify-box {
+    width: 240px;
+    /* height: 70px; */
+    display: inline-block;
+}
+
+.shopping-classify dl:nth-child(6) {
+    border: none;
+    border-bottom: solid 1px #cccccc;
+    margin: 0 auto;
+}
+
+.classify-box {
+    height: 72px;
+    border-bottom: solid 1px #cccccc;
+}
+
+.box1>em {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-top: 18px;
+    margin-left: 12px;
+    background: url(../img/chaoshi.png)-1035px -26px no-repeat;
+}
+
+.classify-box>dl {
+    padding-left: 40px;
+    /* padding-top: 20px; */
+}
+
+.classify-box dl dt {
+    margin: 17px 0 7px;
+}
+
+.classify-box dl dt a {
+    color: #333333;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.classify-box dl dt em {
+    width: 8px;
+    height: 13px;
+    float: right;
+    margin-top: 1px;
+    margin-right: 13px;
+    background: url(../img/chaoshi.png)-905px -26px no-repeat;
+}
+
+.classify-box:hover>em {
+    background: url(../img/chaoshi.png)-1060px 0px no-repeat;
+}
+
+.classify-box:hover>dl a {
+    color: #ffffff !important;
+}
+
+.classify-box:hover>dl em {
+    background: url(../img/chaoshi.png)-905px 0px no-repeat;
+}
+
+.classify-box dl dd a {
+    line-height: 17px;
+    padding-right: 10px;
+    color: #666666;
+}
+
+.classify-item {
+    width: 948px;
+    height: 437px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 240px;
+    top: 0;
+    border: solid 1px #cccccc;
+    border-bottom: none;
+    display: none;
+}
+
+.classify-box:hover {
+    background-color: #E42E3C;
+    border-bottom: solid 1px #E42E3C;
+}
+
+.classify-box:hover .classify-item {
+    display: block;
+    z-index: 10;
+}
+
+.classify-left,
+.classify-center {
+    width: 180px;
+    padding: 0 30px;
+    float: left;
+    border-right: solid 1px #cccccc;
+    margin-top: 10px;
+    height: 410px;
+}
+
+.classify-right {
+    padding-left: 30px;
+    float: left;
+    margin-top: 10px;
+    width: 180px;
+}
+
+.classify-item dl dt {
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #cccccc;
+}
+
+.classify-item dl dt:hover {
+    color: #E42E3C;
+    cursor: pointer;
+}
+
+.classify-item li dl dd a {
+    display: inline-block;
+    color: #686868;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.classify-item dd span {
+    padding: 0 6px;
+    color: #686868;
+}
+
+.classify-item dd a:hover {
+    color: #e42e3c;
+}
+
+.headline {
+    width: 182px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.headline-top {
+    width: 182px;
+    height: 190px;
+    background: url(../img/sptt.png)no-repeat;
+    margin: 10px 0;
+}
+
+.headline-top ul {
+    width: 166px;
+    height: 71px;
+    position: absolute;
+    top: 95px;
+    left: 8px;
+}
+
+.headline-top ul li {
+    position: relative;
+}
+
+.headline-top ul li a {
+    display: inline-block;
+    width: 153px;
+    color: #444444;
+    line-height: 24px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-left: 11px;
+}
+
+.headline-top ul li em {
+    float: left;
+    width: 3px;
+    height: 3px;
+    background-color: #cccccc;
+    position: absolute;
+    left: 0;
+    top: 11px;
+}
+
+.headline-top ul li:hover a {
+    color: #E42E3C;
+}
+
+.headline-top ul li:hover em {
+    background-color: #E42E3C;
+}
+
+.headline-bottom {
+    width: 212px;
+    height: 218px;
+    position: relative;
+}
+
+.headline-bottom img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo>div {
+    cursor: pointer;
+}
+
+.drop {
+    position: relative;
+}
+
+.drop:hover .droplist {
+    display: block;
+}
+
+.drop .droplist {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 36px;
+    background-color: #ffffff;
+    width: 988px;
+    border: solid 1px #dddddd;
+    display: none;
+}
+
+.droplist dl {
+    width: 176px;
+    float: left;
+    margin: 20px 0 20px 20px;
+    border-right: solid 1px #cccccc;
+}
+
+.droplist dl dt {
+    color: #333333;
+    line-height: 17px;
+    height: 25px;
+}
+
+.drop dl dd p {
+    float: left;
+    padding-right: 35px;
+}
+
+.drop dl dd p a {
+    color: #666666;
+    line-height: 25px;
+}
+
+.drop dl dd p a:hover {
+    color: #ff6600;
+}
+
+.drop ul {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    width: 162px;
+    border: solid 1px #cccccc;
+    padding: 8px 0 8px 10px;
+    background-color: #ffffff;
+    display: none;
+}
+
+.drop:hover>ul {
+    display: block;
+    z-index: 10;
+}
+
+.drop ul li a {
+    display: inline-block;
+    width: 65px;
+}
+
+.header-box>ul>li>span:hover {
+    color: #ff6600;
+}
+
+.header-box>ul>li>a:hover {
+    color: #ff6600 !important;
+}
+
+.imp:hover span {
+    color: #ff6600 !important;
+}
+
+.icon-search {
+    color: #cccccc;
+}
+
+.icon-yemian-copy-copy-copy {
+    font-size: 16px !important;
+    padding-right: 3px;
+    color: #666666 !important;
+}
+
+.red {
+    color: #E42E3C !important;
+}
+
+.s3 {
+    color: #666666 !important;
+}
+
+.origen {
+    color: #ff6600 !important;
+}
+
+.seek-box form {
+    position: relative;
+}
+
+.seek-drop {
+    width: 100%;
+    height: 225px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    border: solid 1px #e4e4e4;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+.seek-default {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.seek-left {
+    float: left;
+    border-right: solid 1px #e4e4e4;
+    width: 275px;
+    height: 223px;
+}
+
+.seek-left h3 {
+    line-height: 28px;
+    font-size: 12px;
+    color: #999999;
+    background-color: #EEEEEE;
+    padding-left: 12px;
+}
+
+.seek-right {
+    width: 276px;
+    float: left;
+    height: 223px;
+}
+
+
+/* .rightside {
+    width: 35px;
+    height: 100%;
+    background-color: #333333;
+    position: absolute;
+    top: 0;
+    right: 0;
+} */
