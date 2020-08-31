@@ -64,4 +64,45 @@ $(function() {
         })
         $(this).children(".icon-arrow").toggleClass("icon-arrow-top")
     })
+    $(".drop").click(function() {
+            $(this).children(".droplist").toggle();
+            $(this).children(".shangjiat").toggle();
+            $(this).children(".server").toggle();
+            $(this).children(".icon-arrow").toggleClass("icon-arrow-top")
+        })
+        //搜索框下拉
+    $(".seek-input").focus(function() {
+        $(".seek-drop").css({
+            "display": "block"
+        })
+        $("#seek-default").css({
+            "display": "block"
+        })
+        $(".seek-input").bind('input propertychange', function() {
+            $("#seek-default").css({
+                "display": "none"
+            })
+            console.log($(".seek-input").val());
+        })
+
+    })
+    $(".seek-input").blur(function() {
+        $(".seek-drop").css({
+            "display": "none"
+        })
+    })
+    $(".seek-drop").mouseenter(function() {
+        $(".seek-input").blur(function() {
+            $(".seek-drop").css({
+                "display": "block"
+            })
+        })
+    })
+    $("#drop-close").click(function() {
+        $(".seek-drop").css({
+            "display": "none"
+        })
+    })
+
+
 })
