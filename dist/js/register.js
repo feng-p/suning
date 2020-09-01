@@ -91,13 +91,8 @@ $(function() {
 
     )
 
-
-
-
-
     $(".psd").bind('input propertychange', function() {
         var str = $(".psd").val();
-        console.log(str.length, str);
         if (str.length >= 6) {
             $(".psd-length").css({
                 "display": "block"
@@ -130,7 +125,6 @@ $(function() {
 
     $(".psd").blur(function() {
         var str = $(".psd").val();
-        console.log(str.length)
         $(".posi-warn").css({
             "display": "none"
         });
@@ -212,4 +206,28 @@ $(function() {
         }
     }
 
+})
+
+
+//注册接口
+
+$(function() {
+    $(".btn input").click(function() {
+        if (/^1(3|4|5|6|7|8|9)\d{9}$/.test($(".tel").val()) && /\d{4}/.test($(".sec").val()) && /.{6,18}/.test($(".psd").val())) {
+            $.get("http://jx.xuzhixiang.top/ap/api/reg.php", {
+                username: $(".tel").val(),
+                password: $(".psd").val()
+            }, data => {
+                console.log(data);
+                if (data.msg == "注册成功") {
+                    alert("注册成功，点击确定登录");
+                    location.href = "login.html";
+                } else if (data.msg == "用户名已经存在") {
+                    alert("用户名已存在")
+                } else {
+                    alert("注册失败");
+                }
+            })
+        }
+    })
 })

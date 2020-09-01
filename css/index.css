@@ -723,12 +723,244 @@ header {
     border-color: #ff6600;
 }
 
+.seek-right .seek-c {
+    color: #ff6600;
+    border-color: #ff6600;
+}
 
-/* .rightside {
+.main-title {
+    width: 1190px;
+    height: 75px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.lg {
+    color: #222222;
+    font-size: 32px;
+    margin-bottom: 8px;
+    letter-spacing: 15px;
+    display: inline-block;
+}
+
+.sm {
+    color: #999999;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.back-col {
+    background-color: #F2F2F2;
+}
+
+.main-contain1 {
+    width: 1190px;
+    margin: 0 auto
+}
+
+.contain-tit {
+    height: 88px;
+    width: 1190px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.contain-tit ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contain-tit li {
+    background-color: #ffffff;
+    width: 99.16px;
+}
+
+.icons {
+    width: 26px;
+    height: 28px;
+    background: url(../img/chaoshi.png)-402px -28px no-repeat;
+    margin: 24px auto 9px;
+}
+
+.name {
+    text-align: center;
+    color: #444444;
+}
+
+.first-tit {
+    background-color: #E42E3C !important;
+    height: 88px !important;
+}
+
+.first-tit .icons {
+    background: url(../img/chaoshi.png)-432px -28px no-repeat !important;
+}
+
+.first-tit .name {
+    color: #ffffff !important;
+}
+
+.contain-tit li:hover .icons {
+    background: url(../img/chaoshi.png)-564px 2px no-repeat !important;
+}
+
+.contain-tit li:hover .name {
+    color: #E42E3C !important;
+}
+
+.contain-tit li:hover {
+    border: solid 1px #E42E3C !important;
+    box-sizing: border-box !important;
+}
+
+.container {
+    width: 1200px;
+    height: 610px;
+    margin-top: 10px;
+}
+
+.container li {
+    width: 230px;
+    height: 295px;
+    margin: 0 10px 10px 0;
+    float: left;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.container li img {
+    width: 180px;
+    padding: 20px 25px 10px;
+}
+
+.container li p {
+    width: 140px;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 0 14px 45px;
+    line-height: 20px;
+}
+
+.price {
+    color: #E42E3C;
+}
+
+.container .cartbtn {
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    bottom: 14px;
+    right: 41px;
+    cursor: pointer;
+    background: url(../img/chaoshi.png)-931px 0 no-repeat;
+}
+
+.container li:hover .describe {
+    color: #E42E3C;
+}
+
+.container li:hover img {
+    transform: scale(1.05);
+}
+
+.container img {
+    transition: all 0.3s
+}
+
+.rightside {
     width: 35px;
     height: 100%;
     background-color: #333333;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-} */
+}
+
+.rightside .side-t {
+    width: 100%;
+    height: 357px;
+    position: absolute;
+    top: 178px;
+    left: 0;
+}
+
+.rightside .side-b {
+    width: 100%;
+    height: 140px;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+}
+
+.personal i {
+    display: block;
+    width: 35px;
+    height: 30px;
+    background: url(../img/sidebaricon.png) 0 0 no-repeat;
+    margin-bottom: 5px;
+}
+
+.personal:hover {
+    background-color: #FFAA01;
+}
+
+.personal:hover i {
+    cursor: pointer;
+    background: url(../img/sidebaricon.png)-26px 0 no-repeat;
+}
+
+.cartwrap {
+    border-top: solid 1px #cccccc;
+    border-bottom: solid 1px #cccccc;
+}
+
+.cartwrap i {
+    display: inline-block;
+    width: 35px;
+    height: 30px;
+    background: url(../img/sidebaricon.png)3px -210px no-repeat;
+}
+
+.cartwrap p {
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+.side-b i {
+    display: inline-block;
+    width: 35px;
+    height: 30px;
+    background: url(../img/sidebaricon.png)0 -260px no-repeat;
+}
+
+.side-b i:hover {
+    background: url(../img/sidebaricon.png)-26px -260px no-repeat;
+    background-color: #FFAA01;
+    cursor: pointer;
+}
+
+.side-b i p {
+    width: 75px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFAA01;
+    background-color: #333333;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.side-b i:hover p {
+    color: #333333;
+    background-color: #FFAA01;
+    cursor: pointer;
+}

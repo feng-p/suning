@@ -125,6 +125,39 @@ $(function() {
 
 
 
+    //登录接口
+
+    $(function() {
+        $("#login-btn").click(function() {
+            if (/^1(3|4|5|6|7|8|9)\d{9}$/.test($("#username").val()) && /.{6,20}/.test($("#password").val())) {
+                //检测用户名是否存在
+                // $.get("http://jx.xuzhixiang.top/ap/api/checkname.php?username=" + $("#username").val(), {}, data => {
+                $.get("http://jx.xuzhixiang.top/ap/api/login.php", {
+                    username: $("#username").val(),
+                    password: $("#password").val()
+                }, data => {
+                    console.log(data)
+                    if (data.code == 1) {
+                        alert("登陆成功，点击确定跳转至首页");
+                        location.href = "index.html";
+                    } else {
+                        $(".login-wran").css({
+                            "display": "block"
+                        }).children("span").html("请检查用户名或密码！");
+                    }
+                })
+            }
+        })
+    })
+
+
+
+
+
+
+
+
+
 
 
 
