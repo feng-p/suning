@@ -186,10 +186,14 @@ $(function() {
         })
         //点击
     $(".side-b").children().click(function() {
-        $('body,html').animate({
-                scrollTop: 0
-            },
-            500);
-        return false;
+            $('body,html').animate({
+                    scrollTop: 0
+                },
+                500);
+            return false;
+        })
+        //跳转到购物车
+    $(".cartwrap").click(function() {
+        location.href = "cart.html";
     })
 })
