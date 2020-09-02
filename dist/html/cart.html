@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../css/comment.css">
     <link rel="stylesheet" href="../css/cart.css">
     <link rel="stylesheet" href="../css/font/iconfont.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/cart.js"></script>
 </head>
 
 <body>
@@ -135,7 +137,7 @@
         </div>
     </header>
     <main>
-        <div class="cart-head">
+        <div class="cart-head clean">
             <a href="index.html"><img src="../img/cart-banner.jpg" alt="" style="width: 100%;height: 60px;"></a>
             <a href="index.html" class="logo"><img src="../img/logo.png" alt=""></a>
             <div class="cart-search clean">
@@ -146,9 +148,57 @@
                 <a href="index.html">搜索</a>
             </div>
         </div>
-        <div class="cart-container">
-            <div class="cart-empty">
+        <div class="cart-container clean">
+            <!-- 购物车为空 -->
+            <div class="cart-empty" style="display: block;">
                 <h2 class="link-empty">购物车还是空空的呢，您可以<a href="index.html">去逛逛>></a></h2>
+            </div>
+            <!-- 购物车不是空的 -->
+            <div class="cart-exist" style="display: none;">
+                <!-- 购物车数据标题 -->
+                <!-- <div class="prod-tit">
+                    <div class="th-chk">
+                        <input type="checkbox">
+                        <label for="">全选</label>
+                    </div>
+                    <div class="th th-item">商品信息</div>
+                    <div class="th th-specs">规格</div>
+                    <div class="th th-price">单价（元）</div>
+                    <div class="th th-amount">数量</div>
+                    <div class="th th-sum">小计（元）</div>
+                    <div class="th th-op">操作</div>
+                </div> -->
+                <!-- 购物车数据 -->
+                <!-- <div class="product-box">
+                    <div class="item-main">
+                        <div class="td td-chk form">
+                            <input type="checkbox">
+                        </div>
+                        <div class="td td-item clean">
+                            <img src="../img/milk.jpg" alt="">
+                            <p>商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述</p>
+                        </div>
+                        <div class="td-specs"></div>
+                        <div class="td-price"><span>￥</span>89.90</div>
+                        <div class="td-amout">
+                            <div class="item-amount">
+                                <span class="minus">-</span>
+                                <input type="text" class="text-amount" value="1">
+                                <span class="plus">+</span>
+                            </div>
+                        </div>
+                        <div class="td-sum">￥89.90</div>
+                        <div class="td-del clean"><button class="del-btn">删除</button></div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="check-out">
+                <div class="th-chk">
+                    <!-- <input type="checkbox" class="checkAll">
+                    <label for="">全选</label> -->
+                </div>
+                <div class="totalprice">￥总价</div>
+                <div class="checkout-btn">结算</div>
             </div>
         </div>
     </main>

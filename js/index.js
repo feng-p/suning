@@ -137,29 +137,6 @@ $(function() {
         })
     })
 
-    //搜索框搜所示下拉数据
-    /*  $(".seek-input").bind('input propertychange', function() {
-         var oScript = document.createElement("script");
-         oScript.src = "https://ds.suning.com/ds/his/new/-shou'ji-0-1_0-foo.jsonp?callback=foo&_=" + $(".seek-input").val();
-         //  https://ds.suning.com/ds/his/new/-"+ $(".seek-input").val()+"-autoComplateCallback_184b31b125a59d8c382d3d8382d23350.jsonp?callback=foo&_=1598922648679
-         document.body.appendChild(oScript);
-     })
-
-     function foo(data) {
-         if (data.words) {
-             var res = data.words;
-             var str = "";
-             for (var i = 0; i < 10; i++) {
-                 str += `
-                 <li><a href="#">${res[i].keyname}</a></li>
-                 `
-             }
-             console.log(str);
-             $("#seek-search").html(str);
-         }
-     } */
-
-
 })
 
 $(".contain-tit").children().children().click(function() {
@@ -192,4 +169,56 @@ $(function() {
             500);
         return false;
     })
+})
+
+
+//商品展示
+$(function() {
+        var str = "";
+        $.get("http://jx.xuzhixiang.top/ap/api/productlist.php", {
+            uid: 38652
+        }, data => {
+            var datas = data.data;
+            for (let i = 0; i < datas.length; i++) {
+                str += `
+        <li>
+            <a href="detail.html?pid=${datas[i].pid}" target="_black">
+                <img src="${datas[i].pimg}" alt="">
+                <p class="describe">${datas[i].pdesc}</p>
+                <p class="price">￥&nbsp;<em>${datas[i].pprice}</em></p>
+                <a class="cartbtn" prod-id=${datas[i].pid}></a>
+            </a>
+        </li>
+        `;
+            }
+            $(".container ul").html(str);
+        })
+        console.log($(".cartbtn"))
+        $(".cartbtn").click(function() {
+            console.log($(this).attr("prod-id"));
+            $.get("http://jx.xuzhixiang.top/ap/api/add-product.php", {
+                uid: 38652,
+                pid: $(this).attr("prod-id"),
+                pnum: 1
+            }, data => {
+                console.log(data);
+            })
+        })
+    })
+    //跳转到购物车
+$(function() {
+    $("#cartLi").click(function() {
+        location.href = "cart.html";
+    })
+
+    // 给用户添加商品
+    // $.post("http://jx.xuzhixiang.top/ap/api/goods/goods-add.php", {
+    //     pimg: "../img/shopping14.jpg",
+    //     pname: "",
+    //     pprice: 29.90,
+    //     pdesc: "顽皮（Wanpy）湿粮美妙鲜封包 美妙狗零食犬用鲜封包70g 牛肉味12包",
+    //     uid: 38652
+    // }, data => {
+    //     console.log(data);
+    // })
 })
