@@ -119,7 +119,7 @@ $(function() {
         $(".posi-warn").css({
             "display": "block",
             "color": "#999999"
-        }).html("6-20个字符，由字母、数字和符号的两种以上组合。")
+        }).html("<p class='posi-warn'>6-20个字符，由字母、数字和符号的两种以上组合。<span class=psd-sug-btn>密码设置建议</span></p>")
     })
 
 

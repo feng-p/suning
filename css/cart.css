@@ -313,7 +313,7 @@ main {
 .item-main {
     width: 1148px;
     height: 80px;
-    margin: 20px;
+    padding: 20px;
     float: left;
 }
 

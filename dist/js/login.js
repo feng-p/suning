@@ -136,19 +136,32 @@ $(function() {
                     username: $("#username").val(),
                     password: $("#password").val()
                 }, data => {
-                    console.log(data)
-                    if (data.code == 1) {
-                        alert("登陆成功，点击确定跳转至首页");
-                        location.href = "index.html";
-                    } else {
-                        $(".login-wran").css({
-                            "display": "block"
-                        }).children("span").html("请检查用户名或密码！");
-                    }
+                    $.get("http://jx.xuzhixiang.top/ap/api/login.php?username=" + $("#username").val() + "&password=" + $("#password").val(), {}, data => {
+                        console.log(data)
+                        if (data.code == 1) {
+                            var userid = data.data.id;
+                            alert("登陆成功，点击确定跳转至首页");
+                            location.href = "index.html?uid=" + userid;
+                        } else {
+                            $(".login-wran").css({
+                                "display": "block"
+                            }).children("span").html("请检查用户名或密码！");
+                        }
+                    })
+
                 })
             }
         })
+
     })
+
+
+
+    /* $.get("http://jx.xuzhixiang.top/ap/api/login.php?username=18293346895&password=fengpu0407", {}, data => {
+        var userid = data.data.id;
+        // console.log(userid)
+        // console.log(data)
+    }) */
 
 
 

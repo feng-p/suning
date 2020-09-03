@@ -73,7 +73,7 @@ $(function() {
             <p class="tit">${datas.pdesc}</p>
             <p class="price"><span>￥</span>${datas.pprice}</p>
             <p class="num"><em>数量</em><span>-</span><input type="text" value="1"><span>+</span></p>
-            <p class="join-cart"><input type="button" value="立即购买"><input type="button" value="加入购物车" id="joinBtn" prodid=${datas.pid}></p>
+            <p class="join-cart"><input type="button" value="立即购买"><input type="button" value="加入购物车" id="joinBtn" prodid=${datas.pid} uid=${datas.uid}></p>
         `;
         $(".detail-message").html(str);
         var str1 = "";
@@ -110,7 +110,7 @@ $(function() {
         $(".join-cart").children().eq(1).click(function() {
             // console.log($(".num").children("input").val())
             $.get("http://jx.xuzhixiang.top/ap/api/add-product.php", {
-                uid: 38652,
+                uid: $(this).attr("uid"),
                 pid: pid,
                 pnum: $(".num").children("input").val()
             }, data => {
@@ -133,7 +133,7 @@ $(function() {
 
         //跳转到购物车
         $("#cartLi").click(function() {
-            location.href = "cart.html";
+            location.href = "cart.html?uid=" + $("#joinBtn").attr("uid");
         })
     })
 })

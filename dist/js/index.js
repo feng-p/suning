@@ -173,10 +173,13 @@ $(function() {
 
 
 //商品展示
+
 $(function() {
+
+        var uid = location.search.split("=")[1];
         var str = "";
         $.get("http://jx.xuzhixiang.top/ap/api/productlist.php", {
-            uid: 38652
+            uid: uid
         }, data => {
             var datas = data.data;
             for (let i = 0; i < datas.length; i++) {
@@ -192,33 +195,41 @@ $(function() {
         `;
             }
             $(".container ul").html(str);
-        })
-        console.log($(".cartbtn"))
-        $(".cartbtn").click(function() {
-            console.log($(this).attr("prod-id"));
-            $.get("http://jx.xuzhixiang.top/ap/api/add-product.php", {
-                uid: 38652,
-                pid: $(this).attr("prod-id"),
-                pnum: 1
-            }, data => {
-                console.log(data);
+
+            //加入购物车
+
+            $(".cartbtn").click(function() {
+                // console.log($(this).attr("prod-id"));
+                $.get("http://jx.xuzhixiang.top/ap/api/add-product.php", {
+                    uid: uid,
+                    pid: $(this).attr("prod-id"),
+                    pnum: 1
+                }, data => {
+                    // console.log(data);
+                })
             })
+
         })
+
     })
     //跳转到购物车
 $(function() {
     $("#cartLi").click(function() {
-        location.href = "cart.html";
+        var uid = location.search.split("=")[1];
+        if (uid != undefined) {
+            location.href = "cart.html?uid=" + uid;
+        } else {
+            location.href = "cart.html";
+        }
     })
-
-    // 给用户添加商品
-    // $.post("http://jx.xuzhixiang.top/ap/api/goods/goods-add.php", {
-    //     pimg: "../img/shopping14.jpg",
-    //     pname: "",
-    //     pprice: 29.90,
-    //     pdesc: "顽皮（Wanpy）湿粮美妙鲜封包 美妙狗零食犬用鲜封包70g 牛肉味12包",
-    //     uid: 38652
-    // }, data => {
-    //     console.log(data);
-    // })
 })
+
+//给购物车添加数据
+/* $(function() {
+    $(".cartbtn").click = function() {
+        console.log("a");
+        var prodid = 123;
+        var uid = location.search.split("=")[1];
+        console.log(uid)
+    }
+}) */
