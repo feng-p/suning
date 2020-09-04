@@ -232,5 +232,5 @@ function getTotalprice() {
     for (var i = 0; i < checked.length; i++) {
         totalPrice += Number($(checked[i]).parents(".item-main").find(".td-sum").html());
     }
-    $(".totalprice").html("￥" + totalPrice);
+    $(".totalprice").html("￥" + totalPrice.toFixed(2));
 }
